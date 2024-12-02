@@ -1,0 +1,58 @@
+mongodb -  it is a nosql database 
+it store data in document format inside collection 
+it store data in flexible ,json like format called binary json.
+
+key features-
+1. document oriented - store data in document format.each document in collection represent in a key-value pair.
+2. schema-less - no reuired a fixed schema .means each document have diffrent structre.
+3. Scalability - support horizonal scaling(adding more server to distribute the load) using sharding.
+4.Indexing - mongodb support indexing to improve the speed of queries.
+5. High Avalibilty - with replica set, mongodb ensure redundancy and fault tolerance by maintaining copies of the database on multiple server.
+
+CRUD Operations:
+1.Create: Insert documents into a collection.
+ex-db.Products.insertOne({ name: "T-Shirt", price: 500 });
+2.Read: Fetch data from collections.
+ex-db.Products.find({ price: { $gte: 100 } });
+3.Update: Modify documents in a collection.
+ex-db.Products.updateOne({ name: "T-Shirt" }, { $set: { price: 550 } });
+4.Delete: Remove documents from a collection.
+ex-db.Products.deleteOne({ name: "T-Shirt" });
+
+
+Basic MongoDB Components:
+1.Database:A container for collections. Each database can have multiple collections.
+2.Collection:A group of documents, similar to a table in relational databases.
+3.Document:A record in a collection, stored in BSON format.
+4._id Field:A unique identifier for each document (like a primary key).
+5.MongoDB Shell:A command-line interface to interact with the database.
+
+Why Use MongoDB?
+1.Flexibility:
+Ideal for projects where data structures may change frequently.
+2.Speed:
+Optimized for high-speed read and write operations.
+3.Scalability:
+Suitable for handling large amounts of data and scaling easily with growing applications.
+4.Real-Time Applications:
+Used in projects like e-commerce websites, content management systems, and real-time analytics.
+
+Practical Use Cases-
+1.E-commerce Platforms:
+Store product details, categories, user profiles, and orders.
+2.Content Management Systems:
+Store articles, blog posts, and metadata.
+3.Social Media Applications:
+Manage user posts, comments, and reactions.
+4.IoT Data:
+Store sensor readings and logs.
+
+Tools to Use with MongoDB-
+MongoDB Compass: A GUI tool to interact with MongoDB visually.
+Mongoose: An ODM (Object Data Modeling) library for Node.js to work with MongoDB.
+Atlas: MongoDB’s cloud service for hosting databases.
+
+If you're just starting, consider:-
+*Downloading MongoDB Community Edition or using MongoDB Atlas.
+*Experimenting with basic CRUD operations using the MongoDB Shell or Compass.
+*Learning how MongoDB integrates with programming languages like JavaScript using libraries like Mongoose.
