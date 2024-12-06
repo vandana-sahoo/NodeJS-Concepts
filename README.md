@@ -22,6 +22,6 @@ Database Integration
 CRUD operations with MongoDB and MySQL
 Debugging and Logging
 Using console, logging libraries, and debugging tools
-Security Practices
+Security Practices.
 Environment variables using dotenv
 Rate limiting and sanitization
